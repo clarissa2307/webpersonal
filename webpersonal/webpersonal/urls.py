@@ -16,15 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core import views as core_views
+from core import views 
 
 
 
 
 urlpatterns = [
-    path('', core_views.home, name="home"),
-    path('about/', core_views.about, name="about"),
-    path('contact/', core_views.contact, name="contact"),
-    path('portfolio/', portfolio_views.portfolio, name="portfolio"),
+    path('', views.home, name="home"),
+    path('about/', views.about, name="about"),
+    path('contact/', views.contact, name="contact"),
+    path('portfolio/', views.portfolio, name="portfolio"),
     path('admin/', admin.site.urls),
 ]
