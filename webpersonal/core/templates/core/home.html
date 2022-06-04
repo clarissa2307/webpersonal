@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'core/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% load static %}
 
-<body>
-    {% extends 'core/base.html' %}
+{% block title %}Portada{% endblock %}
 
-    {% block content %}
-        <h2>Portada</h2>
-        <p>Bienvenidos.</p>
-    {% endblock %}
-</body>
+{% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
 
-</html>
+{% block headers %}
+    <h1>Clarissa Salamanca</h1>
+    <span class="subheading">Ingeniero Desarrollo y gestion de Software</span>
+{% endblock %}
